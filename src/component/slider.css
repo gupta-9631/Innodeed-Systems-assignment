@@ -1,0 +1,39 @@
+.car-carousel {
+    position: relative;
+    overflow: hidden;
+    padding: 26px;
+}
+
+.car-container {
+    padding: 0 10px;
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+
+}
+
+.left-btn {
+    border: none;
+    width: 60px;
+    height: 100%;
+}
+
+.next-btn {
+    border: none;
+    width: 60px;
+    height: 100%;
+}
+
+.left-btn,
+.next-btn p {
+    font-size: 50px;
+    background-color: rgba(0, 0, 0, 0.436);
+    border-radius: 50%;
+    cursor: pointer;
+}
