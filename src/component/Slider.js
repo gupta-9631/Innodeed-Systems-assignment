@@ -1,18 +1,18 @@
 import React from "react";
 import "./slider.css";
 import Card from "./Card.js";
-import cars from "../data";
+import cars from "../cars.json";
 
-const slider = () => {
+const Slider = () => {
   let box = document.querySelector(".car-container");
   const leftBtn = () => {
-    let width = box.offsetWidth;
+    let width = box.clientWidth;
     box.scrollLeft = box.scrollLeft - width;
     console.log(width);
   };
 
   const nextBtn = () => {
-    let width = box.offsetWidth;
+    let width = box.clientWidth;
     box.scrollLeft = box.scrollLeft + width;
     console.log(width);
   };
@@ -21,7 +21,7 @@ const slider = () => {
     <div className="car-carousel">
       <div className="car-container">
         {cars.map((car) => {
-          return <Card data={car} />;
+          return <Card data={car} key={car.id} />;
         })}
       </div>
       <div className="button-container">
@@ -36,4 +36,4 @@ const slider = () => {
   );
 };
 
-export default slider;
+export default Slider;

@@ -1,8 +1,65 @@
 .card {
-    min-width: 300px;
-    max-width: 300px;
+    min-width: 350px;
+        max-width: 350px;
     height: 400px;
     background-color: white;
     margin: 10px;
     color: white;
+    display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+    
+    }
+    
+    .bodyType-text {
+        color: rgb(140, 134, 134);
+        font-size: 16px;
+        font-family: sans-serif;
+        text-transform: uppercase;
+    }
+    
+    .model-text {
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: sans-serif;
+        margin-right: 5px;
+    
+    }
+    
+    .model-type-text {
+        color: rgb(165, 161, 161);
+        font-family: sans-serif;
+    }
+    
+    .text-container {
+        display: flex;
+        align-items: center;
+    }
+    
+    .img-container {
+        width: 350px;
+        height: 250px;
+    }
+    
+    .image {
+        margin-top: 15px;
+        width: 350px;
+        height: 250px;
+        object-fit: cover;
+    }
+    
+    
+    .link {
+        margin-top: 30px;
+        display: flex;
+        gap: 30px;
+    }
+    
+    .page-link {
+        text-decoration: none;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: rgb(14, 193, 206)
 }

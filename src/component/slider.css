@@ -19,21 +19,23 @@
 }
 
 .left-btn {
-    border: none;
+    border: 1px solid black;
     width: 60px;
     height: 100%;
+    background-color: transparent;
+        border-radius: 50%;
 }
 
 .next-btn {
-    border: none;
+    border: 1px solid black;
     width: 60px;
     height: 100%;
+    background-color: transparent;
+        border-radius: 50%;
 }
 
 .left-btn,
 .next-btn p {
     font-size: 50px;
-    background-color: rgba(0, 0, 0, 0.436);
-    border-radius: 50%;
     cursor: pointer;
 }

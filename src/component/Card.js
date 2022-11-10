@@ -5,15 +5,22 @@ const Card = (props) => {
   return (
     <div className="card">
       <div className="container">
-        <h2>{props.data.bodyType}</h2>
-        <h2>{props.data.modelName}</h2>
+        <div className="bodyType-text">{props.data.bodyType}</div>
+        <div className="text-container">
+          <span className="model-text">{props.data.modelName}</span>
+          <span className="model-type-text">{props.data.modelType}</span>
+        </div>
         <div className="img-Container">
-          <img src={props.data.imageUrl} alt="" />
+          <img className="image" src={props.data.imageUrl} alt="" />
         </div>
       </div>
-      <div>
-        <a href="#">Learn</a>
-        <a href="#">Shop</a>
+      <div className="link">
+        <a className="page-link" href="#dsaaaaaf">
+          Learn &gt;
+        </a>
+        <a className="page-link" href="#dfdsf">
+          Shop &gt;
+        </a>
       </div>
     </div>
   );
